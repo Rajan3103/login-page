@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/style.css">
+    <style>
+
+        .welcome-container {
+            width: 400px;
+            padding: 40px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .welcome-container h2 {
+            color: #28a745; /* Green for welcome message */
+            margin-bottom: 25px;
+        }
+
+        .welcome-container a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #dc3545; /* Red for logout button */
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            font-weight: 600;
+        }
+
+        .welcome-container a:hover {
+            background-color: #c82333;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+<div class="welcome-container">
+    <h2 th:if="${loginSuccess}" th:text="${loginSuccess}">Welcome! You are logged in.</h2>
+    <h2 th:unless="${loginSuccess}">Welcome! You are logged in.</h2>
+    <a href="/logout">Logout</a>
+</div>
+</body>
+</html>
