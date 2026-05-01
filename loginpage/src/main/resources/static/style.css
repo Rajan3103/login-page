@@ -1,0 +1,135 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e9ecef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    color: #343a40;
+}
+
+.login-container, .signup-container {
+    width: 380px;
+    padding: 35px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #007bff;
+    font-size: 28px;
+    font-weight: 600;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #495057;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: calc(100% - 20px);
+    padding: 12px 10px;
+    margin-bottom: 25px;
+    border: 1px solid #ced4da;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+
+.login-container button {
+    background-color: #007bff;
+    color: white;
+}
+
+.login-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+.signup-container button {
+    background-color: #28a745;
+    color: white;
+}
+
+.signup-container button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+.message {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.message.success {
+    color: #155724;
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+}
+
+.message.error {
+    color: #721c24;
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+}
+
+.signup-link, .login-link {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 15px;
+    color: #6c757d;
+}
+
+.signup-link a {
+    color: #6f42c1;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.login-link a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.signup-link a:hover,
+.login-link a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+}
